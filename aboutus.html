@@ -22,99 +22,131 @@ ul {
  li a:hover {
     background-color: #FFA500;
 }
-p {
+div.headingColor {
 	color: white;
 	}
-
-img {
+img.uspic {
     float: left;
     margin: 0 0 10px 10px;
 }
-img {
-    display: block;
-    margin: 0 auto;
+div.bothimages {
+text-align:center;
+	position: relative;
+	top: 0px;
+	left: 300px;
+}
+img.dice {
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    z-index: -1;
 }
 
+img.dice2 {
+	position: absolute;
+	margin-top: 165px;
+	margin-left: 230px;
+	left: 0px;
+}
+
+.center {
+	text-align: right;
+ }
 </style>
 </head>
 <body>
 
 
 <ul>
-
+<div class="headingColor">
   <li><a class="active" href="future.html">Future</a></li>
-  <li><a class="active"href="#Mission">Mission</a></li>
+  <li><a class="active"href="info.html">Info</a></li>
   <li><a class="active"href="aboutus.html">About</a></li>
   <li><a class="active" href="india.html">Home</a></li>
    <p style="font-size: 25px " float= "left"  class="name" href="#name">Name</p>
+   </div>
 </ul>
 
+<br>
+<br>
+<br>
+<img class ="uspic" src="us.jpg" width="250" height="215">
+<p style="color:#228B22;">Jenna and I are first cousins. I am 14 years old, and I live in San Jose, California while Jenna,16, lives in Scranton, Pennslyvania. Despite living on opposite sides of the country, every year we get together on a family vacation. Both of us stronglgly believe that education as an important part of life and  that all kids should get an chance to recieve quality education. Our grandmother grew up in a small village called Sarban, India. We saw how our grandmother did not have the privilage of receiving quality education. After hearing this, we wanted to help children, especially girls, receive equal education. We hope to rasie awareness for child education with our vision. </p>
 
 
-<script>
-function myFunction()
-<img src="mumbai.jpg" alt="mumbai">
-<img src="ind".jpg" alt="ind">
-<img src="school.jpg" alt="school">
-<img src="Elementary_School.jpg" alt="Elementary_School">
-</script>
+</div>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b
+<br><br>
+<br>
+<br>
+<div class = "bothimages">
+<img src="hello.jpg" class="dice" alt="Map of India" style="width:300px">
+<img class="dice2" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="red.jif" alt="red pin" width="32" height="32">
+</div>
+<p id="hiddenvalue"  style="display:none"; > This is where our grandma grew up, Sarban, India. </p>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div style="background-color:#228B22;color:white;padding:70px;">
+
+<p style="margin-left:1200px;margin-right:1200px">
+
+<p id="email" style="text-align:right"</p>
+
+
+<button type="button" onclick="myFunc()">Contact Us!</button></p>
 <br>
 
-<style>
-p {
-    text-indent: 50px;
-}
+  <p class="center"> | Trinity McAndrew, Aanika Patel, and Jenna Patel</p>
+  
+</div> 
 
-
-</style>
-
-<p style="color:#228B22;"><img src="us.jpg" width="276" height="228">
-Jenna and Aanika _________________. Aanika Pate1,14, lives in San Jose, California.  Jenna Patel,16, lives in Scranton, Pennslyvania. Both of these girls _____ about the topic of education and beilive that all kids should get an education. Both Aanika and Jenna have an Idnidan heritgae or backround? Jenna lives in a family of 5? .. somthing about ba growing up in india? Witht his vision to help riase awarnes for child eucation, both girls hope to help.    </p>
-
-<img src="hello.jpg" alt="Map of India" style="width:30%">
-
-<style>
-img {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-}
-img {
-    display: block;
-    margin: 0 auto;
-}
-</style>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<img src="hello.jpg" alt="Map of India" style="width:30%">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="red.gif" alt="red pin" width="32" height="32">
-
-<p id="hiddenvalue" style="display:none">dsjfklajg </p>
+</body>
 
 <script>
 function bigImg(x) {
     x.style.height = "64px";
     x.style.width = "64px";
-    document.getElementById("hiddenvalue").style.display="inline";
+	var y = document.getElementById('hiddenvalue');
+	y.style.display = 'block';
     
 }
-
 function normalImg(x) {
     x.style.height = "32px";
     x.style.width = "32px";
     document.getElementById("hiddenvalue").style.display="none";
 }
+
+
+function myFunc(){
+	document.getElementById("email").innerHTML = 'mcandrewtrinity@gmail.com, aanikapatel17@gmail.com, or pateljenna2001@gmail.com';
+}
+
 </script>
 
-</body>
 </html>
